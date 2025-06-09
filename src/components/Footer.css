@@ -1,0 +1,77 @@
+.footer {
+    background: linear-gradient(to right, #0f0f13, #1c1209);
+    color: white;
+    padding: 4rem 5% 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    min-width: 220px;
+}
+
+.footer-logo {
+    width: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer-section h3 {
+    color: #fbbf24;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    color: #eee;
+    cursor: pointer;
+}
+
+.footer-section ul li:hover {
+    text-decoration: underline;
+    color: #fbbf24;
+}
+
+.footer-section p {
+    margin: 0.3rem 0;
+    color: #ddd;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 0.875rem;
+    color: #999;
+}
+
+.phone-numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+}
+
+.second-num{
+    margin-left: 2.4rem;
+}
