@@ -1,6 +1,7 @@
 import './Footer.css'
 import logo from '../assets/logo.png'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     const { t } = useTranslation()
@@ -18,7 +19,7 @@ const Footer = () => {
                 <div className="footer-section">
                     <h3>{t('useful_links')}</h3>
                     <ul>
-                        <li>{t('who_we_are')}</li>
+                        <li><Link to="/about">{t('who_we_are')}</Link></li>
                         <li>{t('our_team')}</li>
                         <li>{t('career')}</li>
                         <li>{t('audit_evaluation')}</li>

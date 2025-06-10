@@ -29,5 +29,8 @@
   "send": "Send",
   "message_sent": "Message sent successfully!",
   "message_error": "Failed to send message. Please try again later.",
-  "form_intro": "Please fill out the form below and we’ll get back to you as soon as possible."
+  "form_intro": "Please fill out the form below and we’ll get back to you as soon as possible.",
+  "reports_title": "Reports",
+  "loading_reports": "Loading reports...",
+  "date": "Date"
 }

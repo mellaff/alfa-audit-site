@@ -75,3 +75,9 @@
 .second-num{
     margin-left: 2.4rem;
 }
+
+.footer a,
+.footer a:visited {
+    color: inherit;
+    text-decoration: none;
+}

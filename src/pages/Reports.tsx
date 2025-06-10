@@ -3,6 +3,7 @@ import { collection, getDocs } from "firebase/firestore";
 import { db } from "../services/firebase-config";
 import './Reports.css'
 import overlayImage from '../assets/hero-overlay.png'
+import { useTranslation } from 'react-i18next';
 
 interface Report {
     name: string;
@@ -13,7 +14,7 @@ interface Report {
 const Reports = () => {
     const [reports, setReports] = useState<Report[]>([]);
     const [loading, setLoading] = useState(true);
-
+    const { t } = useTranslation();
 
     useEffect(() => {
         const fetchReports = async () => {
@@ -35,15 +36,15 @@ const Reports = () => {
         <main className="reports-page">
             <img src={overlayImage} alt="" className="overlay-image" />
             <div className="reports-container">
-                <h1 className="reports-title">Reports</h1>
+                <h1 className="reports-title">{t('reports_title')}</h1>
                 {loading ? (
-                    <div className="loader">Loading reports...</div>
+                    <div className="loader">{t('loading_reports')}</div>
                 ) : (
                 <table className="reports-table">
                     <thead>
                     <tr>
-                        <th>Name</th>
-                        <th>Date</th>
+                        <th>{t('name')}</th>
+                        <th>{t('date')}</th>
                     </tr>
                     </thead>
                     <tbody>
