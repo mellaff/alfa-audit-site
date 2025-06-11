@@ -6,10 +6,12 @@ import Reports from './pages/Reports'
 import Contact from './pages/Contact'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop';
 
 const App = () => {
     return (
         <div className="page-container">
+            <ScrollToTop />
             <Header />
             <main className="page-content">
             <Routes>

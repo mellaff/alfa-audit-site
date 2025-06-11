@@ -156,3 +156,8 @@
     50% { opacity: 1; }
     100% { opacity: 0.5; }
 }
+
+.phone-line {
+    display: flex;
+    gap: 10px;
+}

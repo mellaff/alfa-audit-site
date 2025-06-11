@@ -13,17 +13,15 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="footer-section logo-section">
                     <img src={logo} alt="Logo" className="footer-logo" />
-                    <h2>ALFA AUDIT</h2>
                 </div>
 
                 <div className="footer-section">
                     <h3>{t('useful_links')}</h3>
                     <ul>
                         <li><Link to="/about">{t('who_we_are')}</Link></li>
-                        <li>{t('our_team')}</li>
-                        <li>{t('career')}</li>
-                        <li>{t('audit_evaluation')}</li>
-                        <li>{t('strategy_consulting')}</li>
+                        <li><Link to="/services">{t('services_p')}</Link></li>
+                        <li><Link to="/reports">{t('reports')}</Link></li>
+                        <li><Link to="/contact">{t('contact_us')}</Link></li>
                     </ul>
                 </div>
 
@@ -32,8 +30,8 @@ const Footer = () => {
                     <p>{t('location_line_1')}<br />{t('location_line_2')}<br />{t('location_line_3')}</p>
                     <p>{t('working_hours')}</p>
                     <div className="phone-numbers">
-                        <span>{t('phone_1')}</span>
-                        <span className="second-num">{t('phone_2')}</span>
+                        <p>{t('phone_1')}</p>
+                        <p>{t('phone_2')}</p>
                     </div>
                 </div>
                 <br />

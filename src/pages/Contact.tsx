@@ -47,8 +47,10 @@ const Contact = () => {
                     <div className="contact-info">
                         <p>{t('location_line_1')}, {t('location_line_2')}, {t('location_line_3')}</p>
                         <p>{t('working_hours')}</p>
-                        <p>{t('phone_1')}</p>
-                        <p>{t('phone_2')}</p>
+                        <div className="phone-line">
+                            <p>{t('phone_1')}</p>
+                            <p>{t('phone_2')}</p>
+                        </div>
                         <p>Email: info@alfaaudit.am</p>
 
                         <div className="form-intro">

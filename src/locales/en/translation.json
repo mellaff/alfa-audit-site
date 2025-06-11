@@ -1,10 +1,11 @@
 {
   "home": "Home",
-  "about": "About Us",
-  "services": "Services",
+  "about_us": "About Us",
+  "services_p": "Services",
   "reports": "Reports",
   "contact": "Contact Us",
   "support_message": "Support for your Company",
+  "clarity_in_every_detail": "Clarity in every detail.",
   "subtitle": "We are here to help you",
   "read_more": "Read More",
   "useful_links": "Useful links",
@@ -14,12 +15,12 @@
   "audit_evaluation": "Audit & Evaluation",
   "strategy_consulting": "Strategy Consulting",
   "our_address": "Our address",
-  "location_line_1": "Yerevan, Armenia",
-  "location_line_2": "Halabyan 5/6",
+  "location_line_1": "Yerevan 0038, Armenia",
+  "location_line_2": "5/6 Halabyan Street",
   "location_line_3": "Ajapnyak District",
   "working_hours": "Mon–Fri: 10:00–18:00",
-  "phone_1": "Tel.: +374-10-399655",
-  "phone_2": "+374-99-770105",
+  "phone_1": "Tel.: +374-10-399-855",
+  "phone_2": "+374-55-560-550",
   "all_rights_reserved": "All Rights Reserved",
   "contact_us": "Contact Us",
   "name": "Name",
@@ -32,5 +33,78 @@
   "form_intro": "Please fill out the form below and we’ll get back to you as soon as possible.",
   "reports_title": "Reports",
   "loading_reports": "Loading reports...",
-  "date": "Date"
+  "date": "Date",
+  "about": {
+    "title": "About Our Company",
+    "description1": "Alfa Audit is a leading accounting company, which\nprovides a large scale of audit, tax and financial\nconsulting services.",
+    "description2": "We help businesses of all sizes to\nreach to a financial transparency, to minimize the risks\nand to optimize the internal processes for sustainable\nand long-term success.",
+    "description3": "From the day of establishment, we have been faithful to\nthe principles of independence, objectiveness and\nprofessionalism, which allows us to provide reliable and\nproductive solutions to our clients.",
+    "description4": "Our team includes\nexperienced specialists, certified auditors and consultants\nwith a deep knowledge of internal and international\nlegislation.",
+    "whyTitle": "Why Choose Us?",
+    "professionalismTitle": "Professionalism & Experience",
+    "professionalismText": "Our team consists of high qualified specialists, who have\nmany years of experience in the field of audit and tax\naccounting. We constantly update our knowledges and\nskills to be aware of all the changes of legislation and\nbusiness reality.",
+    "individualTitle": "Individual Approach",
+    "individualText": "We understand that each business is unique. That is why\nwe suggest individual solutions, which suits to your\nbusiness specifics and needs.",
+    "independenceTitle": "Independence & Privacy",
+    "independenceText": "We strictly maintain the principles of independence and\nprivacy, which provides our clients with maximum\nprotection of their information and interests.",
+    "transparencyTitle": "Transparency & Honesty",
+    "transparencyText": "Our services are always provided on the basis of clear\nterms and transparent prices. We highly value the trust\nof our clients and always strive to a long-term\npartnership.",
+    "missionTitle": "Our Mission",
+    "missionText": "Our mission is to help businesses become more\ntransparent, efficient and profitable. We strive to be a\ntrusted partner for our clients, providing high-quality\naudit and consulting services, which helps them to\nsucceed in an ever-changing market.",
+    "easyTitle": "It Is Easy to Work With Us",
+    "easyText": "We understand that for a successful business, it is\nimportant not only the quality of services but also a\ncomfortable interaction. So, we do everything, that the\ncooperation with our company be as convenient for you\nas possible. We are always ready to give advices, to\nanswer the questions and to suggest optimal solutions\nfor your company."
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We provide a wide range of professional services to ensure financial transparency, tax compliance, and efficient accounting.",
+
+    "audit": {
+      "title": "Audit",
+      "description1": "The purpose of the audit of the financial\nstatements is the independent review of the\ncompany’s financial statements, to ensure that\nthey are true, accurate and matching with\napplicable legal and accounting standards.",
+      "description2": "During the audit not only the financial\nstatements are checked, but also the internal\nsystem of control, which helps to identify the\npossible mistakes, violations and frauds.",
+      "description3" : "The main objectives of the audit of the financial\nstatements include:" ,
+      "point1": {
+        "title": "Confirmation of reliability of financial statements",
+        "text": "The auditor checks whether the company’s financial statements are correctly composed and whether they reflect the real financial state and the results of the activity."
+      },
+      "point2": {
+        "title": "Compliance with laws and standards",
+        "text": "The auditors check the compliance with international or other accounting standards, as well as country laws."
+      },
+      "point3": {
+        "title": "Evaluation of internal control effectiveness",
+        "text": "The audit can reveal the weaknesses of the internal control system, which can lead to financial risks or violations."
+      },
+      "point4": {
+        "title": "Disclosure of possible risks and fraud",
+        "text": "The auditors can detect suspicious transactions, which may indicate fraud or other financial violations."
+      },
+      "point5": {
+        "title": "Providing confidence to interested parties",
+        "text": "The financial audit helps shareholders, investors,\ncreditors and other interested parties to have\nconfidence in the reliability of the financial data,\non the base of which they make their decisions."
+      },
+      "conclusion": "Thus, audit plays an important role in ensuring the transparency and reliability of a company’s financial statements."
+    },
+
+    "consulting": {
+      "title": "Consulting and Tax Audit",
+      "description1": "Consulting services provided by us mainly include the areas of finance, tax, and management.",
+      "description2": "Frequently changing legislation is common to the tax\nsystem of the Republic of Armenia, which is often\nunclear and is the reason of various interpretations.\nTaxes need to be investigated by relevant competent\nauthorities, which are legally entitled to impose\nsanctions (fines, penalties) on business entities and\ntheir officials for violating the legislation.",
+      "description3": "Under these conditions, there is a risk that additional\ntax liabilities may arise as a result of inspections by\nthe competent authorities, so it is especially\nimportant to provide businessmen with detailed\nadvice on tax legislation, which allows to reduce the\nabove-mentioned risks as much as possible, as well\nas to be oriented when evaluating the effectiveness\nof business investments.",
+      "description4": "We help companies avoid tax risks and fines as much\nas possible, provide recommendations on tax\noptimization and correct presentation of tax\ncalculations and reports."
+    },
+
+    "accounting": {
+      "title": "Accounting",
+      "description1": "Nowadays, every business can face many accounting\nproblems due to frequently changing legislation in\nthe fields of tax, customs and accounting. As\naccounting is another aspect of our company's\nspecialization, we provide an individual approach to\neach client, which allows us to solve the most\ncomplex accounting and tax accounting problems.",
+      "description2": "Our accounting services include the following:",
+      "list": [
+        "Accounting",
+        "Accounting recovery and automation",
+        "Introducing new accounting systems",
+        "Tax accounting and tax reporting",
+        "Accounting control"
+      ]
+    }
+  }
 }

@@ -37,8 +37,8 @@ const Header = () => {
 
                 <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
                     <Link to="/" onClick={() => setMenuOpen(false)}>{t('home')}</Link>
-                    <Link to="/about" onClick={() => setMenuOpen(false)}>{t('about')}</Link>
-                    <Link to="/services" onClick={() => setMenuOpen(false)}>{t('services')}</Link>
+                    <Link to="/about" onClick={() => setMenuOpen(false)}>{t('about_us')}</Link>
+                    <Link to="/services" onClick={() => setMenuOpen(false)}>{t('services_p')}</Link>
                     <Link to="/reports" onClick={() => setMenuOpen(false)}>{t('reports')}</Link>
                     <Link to="/contact" onClick={() => setMenuOpen(false)}>{t('contact')}</Link>
 

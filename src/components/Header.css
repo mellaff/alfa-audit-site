@@ -19,6 +19,7 @@
 .header-logo {
     height: 48px;
     width: auto;
+    margin-left: -4rem;
 }
 
 /* === Navigation Links === */
@@ -168,3 +169,4 @@
 .lang-options li:hover {
     background-color: #f5f5f5;
 }
+
