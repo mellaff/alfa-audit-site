@@ -7,17 +7,20 @@ import {useState} from "react";
 const Contact = () => {
     const { t } = useTranslation()
     const [mapLoaded, setMapLoaded] = useState(false);
-
+ 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         const form = e.currentTarget
 
+        const formData = new FormData(form);
+
         const templateParams = {
-            name: form.name.value,
-            surname: form.surname.value,
-            email: form.email.value,
-            message: form.message.value
-        }
+            name: formData.get("name") as string,
+            surname: formData.get("surname") as string,
+            email: formData.get("email") as string,
+            message: formData.get("message") as string
+        };
+
 
         try {
             await emailjs.send(
