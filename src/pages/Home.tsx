@@ -1,5 +1,4 @@
 import {useTranslation} from 'react-i18next'
-import heroImage from '../assets/hero.jpg'
 import overlayImage from '../assets/hero-overlay.png'
 import './Home.css'
 import {useNavigate} from 'react-router-dom';
