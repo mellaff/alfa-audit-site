@@ -50,6 +50,7 @@ const Header = () => {
                             <ul className="lang-options">
                                 <li onClick={() => changeLanguage('en')}>🇬🇧 English</li>
                                 <li onClick={() => changeLanguage('hy')}>🇦🇲 Հայերեն</li>
+                                <li onClick={() => changeLanguage('ru')}>🇷🇺 Русский</li>
                             </ul>
                         )}
                     </div>

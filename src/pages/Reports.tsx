@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, orderBy } from "firebase/firestore";
 import { db } from "../services/firebase-config";
 import './Reports.css'
 import overlayImage from '../assets/hero-overlay.png'
@@ -19,12 +19,16 @@ const Reports = () => {
     useEffect(() => {
         const fetchReports = async () => {
             try {
-                const querySnapshot = await getDocs(collection(db, "reports"));
+                const q = query(
+                    collection(db, "reports"),
+                    orderBy("date", "desc")
+                );
+                const querySnapshot = await getDocs(q);
                 const data = querySnapshot.docs.map((doc) => doc.data() as Report);
                 setReports(data);
             } catch (err) {
                 console.error("Error loading reports:", err);
-            }finally {
+            } finally {
                 setLoading(false);
             }
         };
