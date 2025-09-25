@@ -1,0 +1,4 @@
+https://www.alfaaudit.am/*  https://alfaaudit.am/:splat  301!
+http://alfaaudit.am/*       https://alfaaudit.am/:splat  301!
+http://www.alfaaudit.am/*   https://alfaaudit.am/:splat  301!
+/*  /index.html  200
