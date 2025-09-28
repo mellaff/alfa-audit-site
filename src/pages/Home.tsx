@@ -138,7 +138,7 @@ const Home = () => {
                         loop={true}
                         autoplay={{delay: 2500}}
                         breakpoints={{
-                            0: { slidesPerView: 1, centeredSlides: true, centeredSlidesBounds: true, spaceBetween: 0 },   // phones
+                            0: { slidesPerView: 1, centeredSlides: true, centeredSlidesBounds: true, spaceBetween: 0, roundLengths: true, centerInsufficientSlides: true },   // phones
                             768: { slidesPerView: 4, spaceBetween: 24 },                       // tablets
                             1024: { slidesPerView: 5, spaceBetween: 32 },
                         }}

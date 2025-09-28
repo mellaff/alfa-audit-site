@@ -161,3 +161,59 @@
     display: flex;
     gap: 10px;
 }
+
+/* --- Mobile & tablet fixes --- */
+@media (max-width: 768px) {
+    .contact-columns {
+        flex-direction: column;
+        gap: 1.5rem;        /* tighter spacing for mobile */
+    }
+
+    .contact-form {
+        margin-bottom: 0;   /* undo the negative pull-up that causes overlap */
+    }
+
+    .contact-right {
+        order: 2;           /* put map after the form/info if you like */
+        min-width: 0;       /* avoid overflow on very narrow screens */
+    }
+
+    .contact-right iframe {
+        margin-top: 0;      /* remove the desktop-only negative offset */
+        height: auto;       /* let aspect-ratio control height */
+        aspect-ratio: 16 / 9;
+        display: block;
+        position: relative;
+        z-index: 1;         /* stay above the overlay image if needed */
+    }
+
+    .contact-page {
+        padding: 3rem 5%;   /* slightly tighter padding on mobile */
+        min-height: auto;   /* prevent forced extra height on short pages */
+    }
+
+    .contact-content h1 {
+        font-size: 2rem;    /* better heading scale on phones */
+    }
+}
+
+/* --- Desktop only (keep the offset effect there) --- */
+@media (min-width: 769px) {
+    .contact-right iframe {
+        margin-top: -2rem;  /* reduce from -6rem to be safer, tweak to taste */
+        height: 600px;      /* your original desktop height */
+        aspect-ratio: auto; /* height wins on desktop */
+    }
+}
+
+/* Extra safety: keep the overlay behind everything */
+.contact-overlay-image {
+    z-index: 0;
+}
+.contact-content,
+.contact-form,
+.contact-right,
+.contact-info {
+    position: relative;
+    z-index: 1;
+}
