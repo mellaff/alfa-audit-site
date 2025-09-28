@@ -27,7 +27,7 @@ status = 200
 [[redirects]]
 from = "http://alfaaudit.am/*"
 to   = "https://alfaaudit.am/:splat"
-status = 301!
+status = 301
 force = true
 
 [[redirects]]
