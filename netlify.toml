@@ -2,28 +2,8 @@
 command = "npm run build"
 publish = "dist"
 
-# ---- Serve important files as-is (no SPA rewrite) ----
-[[redirects]]
-from = "/robots.txt"
-to   = "/robots.txt"
-status = 200
-
-[[redirects]]
-from = "/sitemap.xml"
-to   = "/sitemap.xml"
-status = 200
-
-[[redirects]]
-from = "/sitemap_index.xml"
-to   = "/sitemap_index.xml"
-status = 200
-
-[[redirects]]
-from = "/google66b821bb807fb105.html"
-to   = "/google66b821bb807fb105.html"
-status = 200
-
-# ---- Canonical host: force HTTPS + apex ----
+# ---- Canonical host: force HTTPS + apex (alfaaudit.am) ----
+# Redirects from all non-preferred versions to https://alfaaudit.am/
 [[redirects]]
 from = "http://alfaaudit.am/*"
 to   = "https://alfaaudit.am/:splat"
@@ -42,9 +22,9 @@ to   = "https://alfaaudit.am/:splat"
 status = 301
 force = true
 
-# ---- SPA fallback (must be last) ----
+# ---- SPA fallback (must be last rule) ----
+# Serve index.html for all requests that don't match a static file
 [[redirects]]
 from = "/*"
 to   = "/index.html"
 status = 200
-force = false
