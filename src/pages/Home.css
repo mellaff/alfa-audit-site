@@ -248,3 +248,52 @@
 /*    background: linear-gradient(to right, #3a260b, #1c1209);*/
 /*}*/
 
+@media (max-width: 768px) {
+    .hero-left {
+        margin-left: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-right .lottie {
+        margin: 1rem auto 0 auto;
+        display: block;
+        max-width: 80%;
+    }
+}
+
+/* Mobile-only fixes for partner carousel */
+@media (max-width: 768px) {
+    .partner-slide {
+        margin-left: 0;         /* stop overlap */
+        flex: 0 0 auto;         /* keep slides from collapsing */
+        text-align: center;
+        padding: 0.25rem
+    }
+
+    .carousel-wrapper {
+        padding: 0 1rem;        /* tighter gutters on small screens */
+    }
+
+    .partner-slide img {
+        width: 80px;            /* smaller logos on phones */
+        height: 60px;
+        padding: 0.5rem;
+    }
+
+    /* hide big custom arrows on phones if needed */
+    .custom-swiper-prev,
+    .custom-swiper-next {
+        display: none;
+    }
+}
+
+
+

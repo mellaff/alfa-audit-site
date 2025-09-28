@@ -22,6 +22,15 @@
     margin-left: -4rem;
 }
 
+@media (max-width: 768px) {
+    .header-logo {
+        margin-left: 0;
+        height: 40px;
+        max-width: 80%;
+    }
+}
+
+
 /* === Navigation Links === */
 .nav-links {
     display: flex;
