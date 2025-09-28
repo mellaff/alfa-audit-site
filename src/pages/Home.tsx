@@ -138,10 +138,9 @@ const Home = () => {
                         loop={true}
                         autoplay={{delay: 2500}}
                         breakpoints={{
-                            320: {slidesPerView: 2},
-                            640: {slidesPerView: 3},
-                            768: {slidesPerView: 4},
-                            1024: {slidesPerView: 5},
+                            0: { slidesPerView: 1, centeredSlides: true, spaceBetween: 16 },   // phones
+                            768: { slidesPerView: 4, spaceBetween: 24 },                       // tablets
+                            1024: { slidesPerView: 5, spaceBetween: 32 },
                         }}
                     >
                         {partners.map((partner, index) => (

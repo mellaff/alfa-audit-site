@@ -269,31 +269,68 @@
     }
 }
 
-/* Mobile-only fixes for partner carousel */
+/* MOBILE: one centered slide, big card, smaller arrows */
 @media (max-width: 768px) {
+    /* show one slide and center it visually */
+    .swiper-wrapper { align-items: center; }
     .partner-slide {
-        margin-left: 0;         /* stop overlap */
-        flex: 0 0 auto;         /* keep slides from collapsing */
-        text-align: center;
-        padding: 0.25rem
+        flex: 0 0 78vw;          /* width of the “rectangle” */
+        max-width: 78vw;
+        margin: 0 auto;          /* keep it centered */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .carousel-wrapper {
-        padding: 0 1rem;        /* tighter gutters on small screens */
+    /* if you have a card container around the logo, style it to look bigger */
+    .partner-card {
+        width: 100%;
+        aspect-ratio: 4 / 3;     /* nice rectangle */
+        border-radius: 16px;
+        background: #fff;
+        box-shadow: 0 8px 24px rgba(0,0,0,.15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
     }
 
     .partner-slide img {
-        width: 80px;            /* smaller logos on phones */
-        height: 60px;
-        padding: 0.5rem;
+        max-width: 70%;
+        max-height: 70%;
+        object-fit: contain;
     }
 
-    /* hide big custom arrows on phones if needed */
+    /* gutters / spacing between slides */
+    .carousel-wrapper { padding: 0 0.75rem; }
+    .carousel-container { gap: 0.75rem; }
+
+    /* make the custom arrows visible but smaller */
     .custom-swiper-prev,
     .custom-swiper-next {
-        display: none;
+        display: flex;                 /* was none — show them on mobile */
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 6px 16px rgba(0,0,0,.15);
+        justify-content: center;
+        align-items: center;
     }
+    /* if your arrow icon is an <svg> or <i> inside the button */
+    .custom-swiper-prev svg,
+    .custom-swiper-next svg,
+    .custom-swiper-prev i,
+    .custom-swiper-next i {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* optional: pull arrows in a bit so they don’t overlap the card */
+    .custom-swiper-prev { left: 8px !important; }
+    .custom-swiper-next { right: 8px !important; }
 }
+
 
 
 
