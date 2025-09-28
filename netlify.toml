@@ -2,18 +2,24 @@
 command = "npm run build"
 publish = "dist"
 
+# Serve these files as-is (do NOT rewrite to index.html)
 [[redirects]]
 from = "/robots.txt"
 to   = "/robots.txt"
 status = 200
 
 [[redirects]]
+from = "/sitemap.xml"
+to   = "/sitemap.xml"
+status = 200
+
+[[redirects]]
+from = "/google66b821bb807fb105.html"
+to   = "/google66b821bb807fb105.html"
+status = 200
+
+# SPA fallback for everything else
+[[redirects]]
 from = "/*"
 to   = "/index.html"
 status = 200
-
-[[headers]]
-for = "/robots.txt"
-[headers.values]
-Content-Type = "text/plain; charset=utf-8"
-Cache-Control = "public, max-age=3600"
